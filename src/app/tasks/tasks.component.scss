@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    max-width: 512px;
+    min-height: 60px;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 4px;
+    background-color: $Negro10;
+    margin: 8px 0px 8px 0px;
+}
+
+#taskDone {
+    width: 24px;
+    height: 24px;
+    appearance: none;
+    border: 2px solid black;
+    min-width: 16px;
+}
+
+#taskDone:checked {
+    background-image: url(../../assets/okBlack.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.formInput {
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    margin-right: auto;
+    min-width: 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid black;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    margin: 8px;
+    
+    > img {
+        width: 16px;
+        height: 18px;
+        object-fit: contain;
+    } 
+}
+
+input:checked + label {
+    text-decoration: line-through;
+}
