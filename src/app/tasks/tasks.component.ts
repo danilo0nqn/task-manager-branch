@@ -49,11 +49,11 @@ export class TasksComponent implements OnInit {
         if (this.themeIs === 'darkTheme') {
           this.clipboardImgURL = "../../assets/clipboardWhite.png";
           this.shareImgURL = "../../assets/shareWhite.png";
-          this.deleteImgURL = "../../assets/trashWhite.png";
+          this.deleteImgURL = "../assets/trashWhite.png";
         } else if (this.themeIs === 'lightTheme') {
           this.clipboardImgURL = "../../assets/clipboardBlack.png";
           this.shareImgURL = "../../assets/shareBlack.png";
-          this.deleteImgURL = "../../assets/trashBlack.png";
+          this.deleteImgURL = "../assets/trashBlack.png";
         }
       }
     }
