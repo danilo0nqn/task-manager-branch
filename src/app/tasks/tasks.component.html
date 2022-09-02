@@ -1,0 +1,11 @@
+<ng-template ngFor let-item [ngForOf]="tasks" let-i="index">
+  <div class="formContainer"  >
+    <form class="formInput">
+      <input type="checkbox" id="taskDone" name="taskDone" >
+      <label for="taskDone" class="taskLabel"> {{item}} </label>
+    </form>
+    <button class="btn" (click)="copyTask(i)" ><img src={{clipboardImgURL}} alt="X"></button>
+    <button class="btn" (click)="shareTask(i)" ><img src={{shareImgURL}} alt="X"></button>
+    <button class="btn" (click)="deleteTask(i)" ><img src={{deleteImgURL}} alt="X"></button>
+  </div>
+</ng-template>

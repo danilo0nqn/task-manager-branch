@@ -1,0 +1,4 @@
+<form #newTask="ngForm" (ngSubmit)="onSubmit(newTask)" class="formNewTask" novalidate>
+    <input name="task" ngModel required #task="ngModel" class="newTaskInput">
+    <button class="addButton" (click)="addNewTask(task.value)" ><img src={{addButtonImgURL}} alt=""></button>
+</form>

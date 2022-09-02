@@ -1,0 +1,45 @@
+@import '../../src/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'); 
+
+.mainApp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 24px;
+    margin-right: 24px;
+    &.darkTheme {
+        --elements: #{$Blanco20};
+        --elementsInAddList: #{$Blanco10};
+        --background: #{$Negro};
+        --borders: #{$Blanco};
+        --fontColor: #{$Blanco};
+        --okUrl: #{url(../assets/okWhite.png)};
+    }
+    &.lightTheme {
+        --elements: #{$Negro20};
+        --elementsInAddList: #{$Negro10};
+        --background: #{$Blanco};
+        --borders: #{$Negro};
+        --fontColor: #{$Negro};
+        --okUrl: #{url(../assets/okBlack.png)};
+    }
+    background-color: var(--background);
+    .app {
+        max-width: 512px;
+        margin: auto;
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+        .divider {
+            border: 2px solid var(--elements);
+            margin-bottom: 16px;
+        }
+    }
+}
+
+
+
+
+
